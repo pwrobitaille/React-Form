@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
 import './App.css';
 
 class App extends Component {
