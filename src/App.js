@@ -1,19 +1,42 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Col, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Form className="container form-container">
+          <FormGroup className="row">
+            <div className="col-sm-6">
+              <FormGroup>
+                <Label for="exampleEmail">Section Title</Label>
+                <Input type="text" name="title" placeholder="title" />
+              </FormGroup>
+              <FormGroup>
+                <Label for="exampleText">Description</Label>
+                <Input type="textarea" name="description" className="input textArea" placeholder="tell us about yourself" />
+              </FormGroup>
+            </div>
+            <div className="col-sm-6">
+              <FormGroup>
+                <Label for="examplePassword">Facebook Link</Label>
+                <Input type="url" name="facebook" placeholder="https://" />
+              </FormGroup>
+              <FormGroup>
+                <Label for="examplePassword">Twitter Link</Label>
+                <Input type="url" name="twitter" placeholder="https://" />
+              </FormGroup>
+              <FormGroup>
+                <Label for="examplePassword">Google+ Link</Label>
+                <Input type="url" name="google" placeholder="https://" />
+              </FormGroup>
+              <FormGroup>
+                <Label for="examplePassword">LinkedIn Link</Label>
+                <Input type="url" name="linkedin" placeholder="https://" />
+              </FormGroup>
+            </div>
+          </FormGroup>
+        </Form>
     );
   }
 }
